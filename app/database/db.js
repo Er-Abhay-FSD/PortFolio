@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const connectMongoose = () => {
-  mongoose.connect(process.env.MONGODB_URI, {
+  mongoose.connect('mongodb+srv://er-abhii-FSD:Hitler1916@abhiapi.lihuexo.mongodb.net/', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
