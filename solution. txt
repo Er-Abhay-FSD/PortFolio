@@ -1,0 +1,42 @@
+1. Question 1
+
+Given a binary number as a string, x(a binary string), return the binary string of the same length, y, that will produce the maximum value when XORed with x. There is a number of bits that may be set in y called maxSet.
+
+Example
+
+b / t * s = 3
+
+maxset = 1 x = 101
+
+The binary strings will always have bits digits, and leading zeros are fine.
+
+1. First, determine all possible bits = 3 digit binary strings with only maxBits = 1 or fewer bits set: 000,001,010, 100. These are the potential y values.
+
+2. Now, XOR each of the y values with x = 10
+
+1.000 xor 101 = 101
+
+2.001 xor 101 = 100
+
+3. 010 xor 101 = 111
+
+4. 100 xor 101 = 1
+
+The third value produces the maximal result, where y = 10 Return the string '010'.
+
+Function Description
+
+Complete the function findValue in the editor below.
+
+findYValue has the following parameter(s):
+
+int bits: the length of the binary strings x and y
+
+int maxSet: the number of bits that may be set in y
+
+string x: a binary string
+
+Returns
+
+string: the best y value as a binary string
+
